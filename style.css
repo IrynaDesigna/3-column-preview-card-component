@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+  margin-bottom: 20px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 140px 0 100px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  margin: 40px 0;
+  font-size: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  max-width: 325px;
+  box-sizing: border-box;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card1 {
+  background: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+.card2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.card3 {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+.card img {
+  width: 65px;
+}
+
+.btn {
+  margin-top: 80px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 95%);
+  border-radius: 25px;
+}
+
+.card1 .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.card2 .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.card3 .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  box-sizing: border-box;
+  color: hsl(0, 0%, 95%);
+  cursor: grabbing;
+}
+
+@media only screen and (max-width: 760px) {
+  .card-container {
+    flex-direction: column;
+    margin: 90px 0;
+  }
+
+  .card1 {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .card3 {
+    border-radius: 0 0 5px 5px;
+  }
+}
