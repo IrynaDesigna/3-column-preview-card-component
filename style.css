@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 140px 0 100px;
+  margin: 140px 100px;
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 15px;
 }
