@@ -4,24 +4,35 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
     background: hsl(0, 0%, 95%);
+
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
-  margin-bottom: 20px;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .card-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   align-content: center;
-  margin: 140px 0 100px;
+  /* margin: 140px 0 100px; */
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 15px;
+  /* font-size: 15px; */
+  align-items: stretch;
+  font-size: 0.9375rem; // font size always in rem / em!
+  max-width: 48rem;  // other sizes in rem will allow them to scale too
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -29,7 +40,7 @@ h2 {
   font-family: 'Big Shoulders Display', cursive;
   text-transform: uppercase;
   margin: 40px 0;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .card {
@@ -41,7 +52,7 @@ h2 {
 }
 
 .card p {
-  margin: 0;
+  margin-bottom: auto;
 }
 
 .card1 {
@@ -62,7 +73,7 @@ h2 {
   width: 65px;
 }
 
-.btn {
+.btn_more {
   margin-top: 80px;
   height: 50px;
   width: 150px;
@@ -71,17 +82,18 @@ h2 {
   justify-content: center;
   background: hsl(0, 0%, 95%);
   border-radius: 25px;
+  text-decoration: none;
 }
 
-.card1 .btn {
+.card1 .btn_more {
   color: hsl(31, 77%, 52%);
 }
 
-.card2 .btn {
+.card2 .btn_more {
   color: hsl(184, 100%, 22%);
 }
 
-.card3 .btn {
+.card3 .btn_more {
   color: hsl(179, 100%, 13%);
 }
 
